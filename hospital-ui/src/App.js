@@ -29,7 +29,7 @@ function App() {
     try {
       setLoading(true);
 
-      const res = await axios.post("http://127.0.0.1:5000/predict", {
+      const res = await axios.post("https://hospital-queue-management-system-ktar.onrender.com/predict", {
         severity,
         doctors,
       });
